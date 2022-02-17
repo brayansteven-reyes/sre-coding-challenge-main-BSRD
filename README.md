@@ -11,7 +11,7 @@ Public Repo for Altais Coding Challenge
 - [`tflint`](https://github.com/terraform-linters/tflint)
 - [`terraform-docs`](https://github.com/terraform-docs/terraform-docs)
 
-## Run the project
+## Project setup instructions
 
 Start the project 
 `terraform init`
@@ -20,7 +20,6 @@ Apply the changes
 `terraform apply --auto-approve`
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
-
 ## Providers
 
 | Name | Version |
@@ -59,6 +58,7 @@ Apply the changes
 | Name | Description |
 |------|-------------|
 | <a name="output_ec2_instance_arn"></a> [ec2\_instance\_arn](#output\_ec2\_instance\_arn) | The ARN of the instance |
+| <a name="output_ec2_instance_public_ip"></a> [ec2\_instance\_public\_ip](#output\_ec2\_instance\_public\_ip) | The public IP address assigned to the instance, if applicable. |
 | <a name="output_s3_bucket_arn"></a> [s3\_bucket\_arn](#output\_s3\_bucket\_arn) | The ARN of the bucket. Will be of format arn:aws:s3:::bucketname. |
 | <a name="output_s3_bucket_id"></a> [s3\_bucket\_id](#output\_s3\_bucket\_id) | The name of the bucket. |
 | <a name="output_security_group_id"></a> [security\_group\_id](#output\_security\_group\_id) | The ID of the security group |
@@ -74,3 +74,6 @@ Apply the changes
 ## Web Site
 
 Only accessible with `http://EC2-IP`, the IP is in the outputs.
+
+## Authors
+- [Brayan Reyes](https://github.com/brayansteven-reyes)
