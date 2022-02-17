@@ -19,7 +19,6 @@ output "security_group_id" {
   value       = module.security_group.security_group_id
 }
 
-
 output "ec2_instance_arn" {
   description = "The ARN of the instance"
   value       = module.ec2_instance.arn

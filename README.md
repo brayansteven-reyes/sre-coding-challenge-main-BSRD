@@ -1,7 +1,7 @@
 # sre-coding-challenge
 Public Repo for Altais Coding Challenge
 
-## Pre-install
+## Requirements
 
 - `terraform`
 - `python`
@@ -69,3 +69,6 @@ Public Repo for Altais Coding Challenge
 
 ![Alt text](images/Architecture.png?raw=true "Architecture")
 
+## Web Site
+
+Only accessible with http://EC2-IP

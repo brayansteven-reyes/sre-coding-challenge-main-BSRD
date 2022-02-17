@@ -6,14 +6,14 @@ locals {
     Owner       = "DevOps"
     ManagedBy   = "Terraform"
   }
-  user_data = <<-TTT
+  user_data = <<-EOT
     #!/bin/bash
     sudo su
     yum -y install httpd
     echo "<h1> My Challenge BSRD! </h1>" >> /var/www/html/index.html
     sudo systemctl enable httpd
     sudo systemctl start httpd
-    TTT
+    EOT
   name      = "web-page"
 }
 
@@ -54,6 +54,7 @@ module "ec2_instance" {
   monitoring                  = true
   vpc_security_group_ids      = [module.security_group.security_group_id]
   subnet_id                   = element(module.vpc.public_subnets, 0)
+  user_data_base64            = base64encode(local.user_data)
   tags                        = local.common_tags
 }
 
