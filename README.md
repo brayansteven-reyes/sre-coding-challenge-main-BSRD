@@ -11,13 +11,15 @@ Public Repo for Altais Coding Challenge
 - [`tflint`](https://github.com/terraform-linters/tflint)
 - [`terraform-docs`](https://github.com/terraform-docs/terraform-docs)
 
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
-## Requirements
+## Run the project
 
-| Name | Version |
-|------|---------|
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | 3.74.0 |
-| <a name="requirement_random"></a> [random](#requirement\_random) | 3.1.0 |
+Start the project 
+`terraform init`
+
+Apply the changes
+`terraform apply --auto-approve`
+
+<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Providers
 
@@ -71,4 +73,4 @@ Public Repo for Altais Coding Challenge
 
 ## Web Site
 
-Only accessible with http://EC2-IP
+Only accessible with `http://EC2-IP`, the IP is in the outputs.

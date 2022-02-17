@@ -24,6 +24,11 @@ output "ec2_instance_arn" {
   value       = module.ec2_instance.arn
 }
 
+output "ec2_instance_public_ip" {
+  description = "The public IP address assigned to the instance, if applicable."
+  value       = module.ec2_instance.public_ip
+}
+
 output "s3_bucket_id" {
   description = "The name of the bucket."
   value       = module.s3_bucket.s3_bucket_id
