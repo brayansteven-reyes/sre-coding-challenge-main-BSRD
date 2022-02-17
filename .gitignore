@@ -1,0 +1,8 @@
+
+# Terraform Variables File
+.terraform.lock.hcl
+.terraform
+terraform.tfvars
+
+# tflint plugins
+.tflint.d/
